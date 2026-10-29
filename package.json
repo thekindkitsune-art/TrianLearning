@@ -1,0 +1,13 @@
+{
+  "name": "study-portal",
+  "version": "1.0.0",
+  "description": "Educational resource index",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "unblocker": "^0.3.11"
+  }
+}
