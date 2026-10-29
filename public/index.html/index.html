@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Academic Resource Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🗂️ GARD</div>
+            <h1>Global Academic Resource Database</h1>
+            <p>Enter an archive index, reference query, or secure digital library identifier to retrieve archived learning materials.</p>
+        </header>
+
+        <main>
+            <form id="search-form">
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="target-url" 
+                        placeholder="Enter domain name, educational index ID, or resource path..." 
+                        required
+                        autocomplete="off"
+                    >
+                    <button type="submit">Query Database</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>System status: <span class="status-online">Operational</span> | Node Terminal Hook: Active | Data Stream: Encrypted</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let urlInput = document.getElementById("target-url").value.trim();
+            
+            if (!urlInput) return;
+
+            // Automatically prepend secure protocol strings if absent
+            if (!/^https?:\/\//i.test(urlInput)) {
+                urlInput = "https://" + urlInput;
+            }
+
+            // Map browser frame target directly to your unblocker routing engine
+            const targetDestination = window.location.origin + "/science-hub/" + urlInput;
+            
+            window.location.href = targetDestination;
+        });
+    </script>
+</body>
+</html>
