@@ -1,6 +1,7 @@
 {
-  "name": "study-portal",
-  "version": "1.0.0",
+  "homepage": "https://<your-username>.github.io/<your-repo-name>",
+  "name": "Trian-Learning",
+  "version": "0.1.0",
   "description": "Educational resource index",
   "main": "index.js",
   "scripts": {
